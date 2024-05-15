@@ -202,4 +202,46 @@
     .hero .hero-title .second-title .mask h1 {
         font-size: 3rem;
     }
+
+    section.about {
+        display: block;
+        height: 220vh;
+        flex-direction: column;
+    }
+
+    .horizontal-title h1 {
+        border-right: 0;
+        margin-left: 15px;
+        border-left: 4px solid #000;
+        padding-left: 0.3em;
+    }
+
+    .container {
+        width: 100%;
+        margin: 2em 0;
+    }
+
+    .vertical-content {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .vertical-content .col {
+        width: 100%;
+    }
+
+    .col-left h1{
+        font-size: 6em;
+        margin-bottom: 3em;
+    }
+
+    .col-right{
+        position: relative;
+        z-index: 999;
+    }
+
+    .vertical-item:not(:last-child) {
+        margin-bottom: 50px;
+    }
 }
