@@ -31,7 +31,7 @@
     --Slussen-bold: "Slusses-Extended-Bold", sans-sarif;
     --Slussen-Medium: "Slusses-Extended-Medium", sans-sarif;
     --Slussen-Semibold: "Slusses-Extended-SemiBold", sans-sarif;
-    --primary-color: blue;
+    --primary-color: #bc1888;
 }
 
 ::-webkit-scrollbar{
@@ -58,7 +58,7 @@ body:before {
     width: 100vw;
     z-index: -99;
     background: rgb(0, 0, 0);
-    background-image: url(public/images/background.svg), linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.2) 5%, blue 100%);
+    background-image: url(public/images/background.svg), linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.2) 5%, var(--primary-color) 100%);
     background-size: 100% 150%, auto;
     background-position: center, 0% 0%;
     background-repeat: no-repeat, repeat;
@@ -440,8 +440,16 @@ footer .social .social-link {
 }
 
 footer .social .social-link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3em;
     font-size: 2em;
     margin-right: 1em;
+}
+
+footer .social .social-link a img{
+    width: 30px;
 }
 
 footer .social .social-link a:nth-child(1):hover {
