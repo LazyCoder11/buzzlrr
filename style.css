@@ -37,7 +37,7 @@
 html,
 body {
     font-family: var(--primary-font);
-    overflow: hidden;
+    overflow: auto;
     word-wrap: break-word;
 }
 
