@@ -199,7 +199,7 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 468px) {
     .hero .hero-title .first-title .mask h1 {
         font-size: 3rem;
     }
@@ -210,7 +210,7 @@
 
     section.about {
         display: block;
-        height: 220vh;
+        height: 250vh;
         flex-direction: column;
     }
 
@@ -248,5 +248,21 @@
 
     .vertical-item:not(:last-child) {
         margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 468px){
+    section.about{
+        height: 290vh;
+    }
+}
+@media only screen and (max-width: 381px){
+    section.about{
+        height: 300vh;
+    }
+}
+@media only screen and (max-width: 365px){
+    section.about{
+        height: 320vh;
     }
 }

@@ -189,6 +189,7 @@ section.about {
     height: 190vh;
     width: 100vw;
     flex-direction: row;
+    padding: 2em 0;
 }
 
 .col-left h1 {
