@@ -75,7 +75,7 @@ const timeline = gsap.timeline({ paused: true });
 timeline.fromTo(
   col_left,
   { y: 0 },
-  { y: "150vh", duration: 1, ease: "none" },
+  { y: "250vh", duration: 5, ease: "none" },
   0
 );
 

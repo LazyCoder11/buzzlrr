@@ -1,9 +1,6 @@
 /* Mobile Rsponsiveness */
 
 @media only screen and (max-width: 1024px) {
-    .main {
-        padding: 0 2em;
-    }
 
     .navbar {
         justify-content: center;
@@ -77,6 +74,13 @@
         overflow: hidden;
     }
 
+    .horizontal-title h1 {
+        border-right: 0;
+        margin-left: 15px;
+        border-left: 4px solid #000;
+        padding-left: 0.3em;
+    }
+
     .container {
         width: 100%;
         margin: 2em 0;
@@ -91,7 +95,7 @@
         width: 100%;
     }
 
-    .verticel-item:not(:last-child){
+    .verticel-item:not(:last-child) {
         margin-bottom: 100px !important;
     }
 
@@ -121,7 +125,13 @@
 
     .horizontal-gallery {
         grid-template-columns: repeat(2, 1fr);
-        row-gap: 30px;
+        row-gap: 8px;
+    }
+
+    .horizontal-item.col-right {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
     }
 
     .horizontal-gallery .mask {
@@ -132,6 +142,10 @@
     section.edited-videos {
         height: 520vh;
         overflow: hidden;
+    }
+
+    .work-content {
+        padding: 0;
     }
 
     footer .footer-container {
@@ -164,5 +178,18 @@
 
     footer .footer-container .developer {
         font-size: 0.8em;
+    }
+    footer .social .social-link a{
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .hero .hero-title .first-title .mask h1 {
+        font-size: 3rem;
+    }
+
+    .hero .hero-title .second-title .mask h1 {
+        font-size: 3rem;
     }
 }

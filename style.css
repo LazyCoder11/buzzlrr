@@ -31,6 +31,7 @@
     --Slussen-bold: "Slusses-Extended-Bold", sans-sarif;
     --Slussen-Medium: "Slusses-Extended-Medium", sans-sarif;
     --Slussen-Semibold: "Slusses-Extended-SemiBold", sans-sarif;
+    --primary-color: blue;
 }
 
 html,
@@ -53,7 +54,7 @@ body:before {
     width: 100vw;
     z-index: -99;
     background: rgb(0, 0, 0);
-    background-image: url(public/images/background.svg), linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.2) 5%, rgba(181, 32, 163, 1) 100%);
+    background-image: url(public/images/background.svg), linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.2) 5%, blue 100%);
     background-size: 100% 150%, auto;
     background-position: center, 0% 0%;
     background-repeat: no-repeat, repeat;
@@ -84,7 +85,7 @@ a {
     display: flex;
     align-items: end;
     font-size: 3em;
-    color: #b520a3;
+    color: var(--primary-color);
 }
 
 .navbar .logo img {
@@ -103,7 +104,7 @@ a {
 }
 
 .navbar .menu .menu-list .cta-btn {
-    background: #b520a3;
+    background: var(--primary-color);
     padding: 0.5em 1.5em;
 }
 
@@ -116,7 +117,7 @@ section {
 
 section.hero {
     min-height: 100vh;
-    padding: 1em 10em;
+    padding: 0 10em;
     gap: 3em;
 }
 
@@ -181,7 +182,7 @@ section.hero {
 /* About Section */
 
 section.about {
-    height: 250vh;
+    height: 190vh;
     width: 100vw;
     flex-direction: row;
 }
@@ -211,7 +212,7 @@ section.about {
 }
 
 .vertical-item h2 {
-    color: #b520a3;
+    color: var(--primary-color);
     width: 100%;
     display: flex;
     gap: 20px;
@@ -326,7 +327,7 @@ section.portfolio {
 
 .horizontal-gallery .mask {
     border-radius: 10px;
-    border: 2px solid #b520a3;
+    border: 2px solid var(--primary-color);
     transition: all 500ms;
 }
 
