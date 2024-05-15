@@ -34,6 +34,10 @@
     --primary-color: blue;
 }
 
+::-webkit-scrollbar{
+    width: 0px;
+}
+
 html,
 body {
     font-family: var(--primary-font);

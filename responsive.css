@@ -34,6 +34,10 @@
     .hero .hero-subtitle h3.brushed-text span img {
         width: 200px;
     }
+
+    section.about{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 480px) {
