@@ -69,9 +69,8 @@
 
     section.about {
         display: block;
-        height: 100vh;
+        height: 220vh;
         flex-direction: column;
-        overflow: hidden;
     }
 
     .horizontal-title h1 {
@@ -86,17 +85,28 @@
         margin: 2em 0;
     }
 
-    .verticel-content {
+    .vertical-content {
         display: flex;
         flex-direction: column;
+        padding: 0;
     }
 
-    .verticel-content .col {
+    .vertical-content .col {
         width: 100%;
     }
 
-    .verticel-item:not(:last-child) {
-        margin-bottom: 100px !important;
+    .col-left h1{
+        font-size: 6em;
+        margin-bottom: 3em;
+    }
+
+    .col-right{
+        position: relative;
+        z-index: 999;
+    }
+
+    .vertical-item:not(:last-child) {
+        margin-bottom: 50px;
     }
 
     .video-container .first-three,
@@ -140,7 +150,7 @@
     }
 
     section.edited-videos {
-        height: 520vh;
+        height: 450vh;
         overflow: hidden;
     }
 
