@@ -12,6 +12,8 @@ function raf(time) {
   requestAnimationFrame(raf);
 }
 
+requestAnimationFrame(raf);
+
 document.querySelectorAll('a[href^="#"]').forEach((el) => {
   el.addEventListener("click", (e) => {
     e.preventDefault();
@@ -23,8 +25,6 @@ document.querySelectorAll('a[href^="#"]').forEach((el) => {
     }
   });
 });
-
-requestAnimationFrame(raf);
 
 let texttl = gsap.timeline();
 
@@ -86,8 +86,3 @@ const scroll1 = ScrollTrigger.create({
   end: "bottom center",
   scrub: true,
 });
-
-const footer = document.getElementById("footer");
-const footerTL = gsap.timeline({ paused: true });
-
-footerTL.fromTo(footer);
