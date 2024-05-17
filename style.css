@@ -57,12 +57,12 @@ body:before {
     transform: scale(1);
     width: 100vw;
     z-index: -99;
-    /* background: rgb(0, 0, 0); */
-    background-image: url(/public/images/BG.png);
-    /* background-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.2) 5%, var(--primary-color) 100%); */
-    /* background-size: 100% 150%, auto; */
+    background: rgb(0, 0, 0);
+    /* background-image: url(/public/images/BG.png); */
+    background-image: url(/public/images/background.svg), linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 5%, var(--primary-color) 100%);
+    background-size: 100% 150%, auto;
     background-position: center, 0% 0%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat, repeat;
 }
 
 a {
@@ -81,7 +81,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #000;
+    /* background: #000; */
 }
 
 .navbar .logo {
